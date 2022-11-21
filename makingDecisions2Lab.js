@@ -7,7 +7,8 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-var firstItem = 0
+var firstItem = arr.slice(0, 1)
+console.log(firstItem);
 
 ////////// PROBLEM 2 //////////
 /*
@@ -64,7 +65,21 @@ var score = 74
 */
 
 //Code Here
-
+  if (score >= 90){
+    console.log("A");
+  }
+    else if (score >= 80){
+      console.log("B");
+    }
+    else if (score >= 70){
+      console.log("C");
+    }
+    else if (score >= 60){
+      console.log("D");
+    }
+    else if (score <= 59){
+      console.log("F");
+    }
 
 ////////// Intermediate Problems //////////
 
@@ -79,7 +94,8 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-
+var someNum = myFavoriteNumbers.slice(4, 5)
+console.log(someNum);
 
 ////////// PROBLEM 7 //////////
 
@@ -98,7 +114,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-
+for (let i = 0; i <= listOfNumbers.length; i++) {
+   if (i % 3 == 0){
+    console.log(i, "is divisble by 3")
+   }
+}
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -110,7 +130,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for (var i = letters.length - 1; i >= 0; i--) {
+  console.log(letters[i]);
+}
 
 ////////// Advanced Problems //////////
 
